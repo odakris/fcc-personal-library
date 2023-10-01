@@ -1,34 +1,137 @@
-.border {
-  border-style: solid;
-  border-width: 1px;
-  margin: 10px;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid black; */
+    font-family: arial;
 }
 
-#sampleui {
-  max-width: 450px;
-  margin-left: 5%;
-  height: 100%;
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#sampleposting {
-  max-width: 450px;
-  text-align: center;
-  margin-left: 5%;
+.flex-row {
+    flex-direction: row;
 }
 
-#userstories {
-  margin-left: 5%;
+.wrap {
+    flex-wrap: wrap;
+}
+
+/* BODY / CONTAINER */
+body {
+    padding: 10px;
+    color: linen;
+    background-color: #003c58;
+}
+
+hr {
+    width: 100%;
+    margin: 20px 0;
+}
+
+h2,
+h3 {
+    text-align: center;
+    margin: 10px 0;
 }
 
 form {
-  padding: 5px;
-}
-
-label {
-  display: block;
-  font-weight: bold;
+    padding: 25px;
+    margin: 20px 30px;
+    background-color: #1c5a77;
+    display: inline-block;
+    min-width: 300px;
+    border-radius: 10px;
+    border: 2px solid linen;
 }
 
 input {
-  margin-bottom: 5px;
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    font-size: 16px;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #e4f1fe;
+    border: 1px solid grey;
+    box-shadow: 2px 2px #999;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fffec4;
+}
+
+.titles {
+    text-align: center;
+}
+
+.subtitle {
+    margin: 20px;
+}
+
+#sampleui {
+    width: 500px;
+    height: 100%;
+}
+
+#sampleui>button {
+    margin: 10px;
+}
+
+#jsonResult {
+    min-height: 50px;
+    max-width: 500px;
+}
+
+#jsonDisplay {
+    width: 100%;
+}
+
+code {
+    text-align: left;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: monospace;
+    font-size: 14px;
+    color: #003c58;
+    background-color: linen;
+    min-width: 94%;
+    white-space: break-spaces;
+    word-break: break-all;
+}
+
+#bookDetail {
+    padding: 30px;
+    margin: 10px;
+    border: 2px solid linen;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/* FOOTER STYLE */
+.footer {
+    margin-top: 20px;
+}
+
+a {
+    color: linen;
 }
